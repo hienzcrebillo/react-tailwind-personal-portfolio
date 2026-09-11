@@ -1,3 +1,10 @@
+import { FaLinkedin, FaFacebook } from "react-icons/fa";
+
+const socialLinks = [
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/hienzcrebillo/", label: "LinkedIn" },
+  { icon: FaFacebook, href: "https://www.facebook.com/hienz.crebillo/", label: "Facebook" },
+];
+
 const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
@@ -34,6 +41,20 @@ export const Footer = () => {
               </a>
             ))}
           </nav>
+
+          {/* Social Links */}
+          <div className="flex flex-wrap items-center gap-4">
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                aria-label={social.label}
+                className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
+              >
+                <social.icon className="w-5 h-5" />
+              </a>
+            ))}
+          </div>
 
          
         </div>
