@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
@@ -121,6 +121,15 @@ export const Projects = () => {
                             </div>
                         ))}
                     </div>
+
+
+                     <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
+                        <a href= "#experience"
+                        className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group" >
+                        <ChevronDown className="w-6 h-6 animate-bounce" />
+                        </a>
+                    </div>
+
                     {/* View All CTA 
                         <div className="text-center mt-12 animate-fade-in animation-delay-500">
                         <AnimatedBorderButton>

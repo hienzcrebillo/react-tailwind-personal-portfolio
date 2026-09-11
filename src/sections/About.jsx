@@ -1,4 +1,4 @@
-import { Brain, BrainCircuit, Code2, HandshakeIcon, Lightbulb, Rocket, School2Icon, Users } from "lucide-react";
+import { Brain, BrainCircuit, Code2, HandshakeIcon, Lightbulb, Rocket, School2Icon, ChevronDown } from "lucide-react";
 
 const highlights = [
   {
@@ -148,6 +148,13 @@ export const About = () => {
 
 
             </div>
+                 <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
+                    <a href= "#projects"
+                    className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group" >
+                    <ChevronDown className="w-6 h-6 animate-bounce" />
+                    </a>
+                </div>
+           
         </div>
     </section>;
 };

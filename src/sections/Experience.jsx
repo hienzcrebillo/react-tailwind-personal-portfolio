@@ -1,3 +1,4 @@
+import { ChevronDown } from 'lucide-react';
 const experiences = [
   {
     period: "Apr 2023 - May 2026",
@@ -130,6 +131,14 @@ export const Experience = () => {
           </div>
         </div>
       </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
+          <a href= "#contact"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group" >
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+          </a>
+      </div>
+           
     </section>
   );
 };
