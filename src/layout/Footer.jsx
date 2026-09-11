@@ -1,8 +1,9 @@
-import { FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { SiIndeed } from "react-icons/si";
 
 const socialLinks = [
   { icon: FaLinkedin, href: "https://www.linkedin.com/in/hienzcrebillo/", label: "LinkedIn" },
-  { icon: FaFacebook, href: "https://www.facebook.com/hienz.crebillo/", label: "Facebook" },
+  { icon: SiIndeed, href: "https://ph.jobstreet.com/profiles/hienz-crebillo-vKG4LmK6TY", label: "Indeed" },
 ];
 
 const footerLinks = [
