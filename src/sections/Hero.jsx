@@ -2,7 +2,8 @@ import { Button } from '@/components/Button';
 import {
   ArrowRight,
   Download,
-  ChevronDown
+  ChevronDown,
+  MailIcon
 } from 'lucide-react';
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
@@ -129,11 +130,9 @@ export const Hero = () => {
                 {/*CTA*/}
                 <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                     <a href="#contact">
-                    <Button size="lg"> 
-                    Contact Me
-                     <ArrowRight className='w-5 h-5'/>
-                   
-                   </Button>  
+                       <AnimatedBorderButton>
+                        <MailIcon className='w-5 h-5'/> Contact Me
+                       </AnimatedBorderButton>
                    </a>
                    
                      <a
